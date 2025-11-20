@@ -6,24 +6,26 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 
 ## Informações do trabalho
 
-- Nome:
-- Matricula:
-- Proposta de projeto escolhida:
-- Breve descrição sobre seu projeto:
+- Nome: Sofia Soares Bortolini
+- Matricula: 905912
+- Proposta de projeto escolhida: Site de viagem
+- Breve descrição sobre seu projeto: Trata-se de um sitee de viagens onde o cliente pode acessar e escolher a viagem perfeita para ele.
 
 **Print dos testes da API com Postman ou similar**
 
-<< COLOQUE A IMAGEM GET AQUI >>
+![Imagem GET](GET.png)
 
-<< COLOQUE A IMAGEM POST AQUI >>
+![Imagem POST](POST.png)
 
-<< COLOQUE A IMAGEM PUT AQUI >>
+![Imagem PUT](PUT.png)
 
-<< COLOQUE A IMAGEM DELETE AQUI >>
+![Imagem DELETE](DELETE.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR POST e GET**
 
-<<  COLOQUE A IMAGEM AQUI >>
+![Imagem TELA](printTELA1.png)
+![Imagem Tela2](PRINTELA2.png)
+![Imagem Tela 3](PRINTTELA3.png)
 
 ## **Orientações Gerais**
 
