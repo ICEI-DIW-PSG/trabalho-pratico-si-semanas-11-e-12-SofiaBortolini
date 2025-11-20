@@ -9,23 +9,23 @@ Para esse projeto, além de mudarmos o JSON para o JSON Server, vamos permitir o
 - Nome: Sofia Soares Bortolini
 - Matricula: 905912
 - Proposta de projeto escolhida: Site de viagem
-- Breve descrição sobre seu projeto: Trata-se de um sitee de viagens onde o cliente pode acessar e escolher a viagem perfeita para ele.
+- Breve descrição sobre seu projeto: Trata-se de um site de viagens onde o cliente pode acessar e escolher a viagem perfeita para ele.
 
 **Print dos testes da API com Postman ou similar**
 
-![Imagem GET](public/GET.png)
+![Imagem GET](Imagens/GET.png)
 
-![Imagem POST](public/POST.png)
+![Imagem POST](Imagens/POST.png)
 
-![Imagem PUT](public/PUT.png)
+![Imagem PUT](Imagens/PUT.png)
 
-![Imagem DELETE](public/DELETE.png)
+![Imagem DELETE](Imagens/DELETE.png)
 
 **Print da aba NETWORK com requisições Fetch/XHR POST e GET**
 
-![Imagem TELA](public/printTELA1.png)
-![Imagem Tela2](public/PRINTELA2.png)
-![Imagem Tela 3](public/PRINTTELA3.png)
+![Imagem TELA](Imagens/printTELA1.png)
+![Imagem Tela2](Imagens/PRINTELA2.png)
+![Imagem Tela 3](Imagens/PRINTTELA3.png)
 
 ## **Orientações Gerais**
 
