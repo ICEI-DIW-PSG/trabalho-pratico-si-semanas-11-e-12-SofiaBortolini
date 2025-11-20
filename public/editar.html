@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Editar Destino</title>
+    <link rel="stylesheet" href="style.css">
+   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script defer src="app.js"></script>
+</head>
+<body>
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Editar Destino</h2>
+    <div id="msg"></div>
+
+    <form id="formEditar" class="p-4 bg-light rounded shadow-sm">
+        <input type="hidden" id="id">
+        <div class="mb-3">
+            <label for="titulo" class="form-label">Título:</label>
+            <input type="text" id="titulo" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="local" class="form-label">Local:</label>
+            <input type="text" id="local" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="imagem" class="form-label">URL da Imagem:</label>
+            <input type="text" id="imagem" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="preco" class="form-label">Preço por pessoa:</label>
+            <input type="number" id="preco" class="form-control" required min="0">
+        </div>
+
+        <div class="mb-3">
+            <label for="distancia" class="form-label">Distância do centro:</label>
+            <input type="text" id="distancia" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label for="nota" class="form-label">Nota:</label>
+            <input type="number" id="nota" class="form-control" required min="0" max="10">
+        </div>
+
+        <div class="mb-3">
+            <label for="estrelas" class="form-label">Estrelas:</label>
+            <input type="number" id="estrelas" class="form-control" required min="1" max="5">
+        </div>
+
+        <div class="mb-3">
+            <label for="wifi" class="form-label">Wi-Fi disponível:</label>
+            <select id="wifi" class="form-control">
+                <option value="true">Sim</option>
+                <option value="false">Não</option>
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label for="voo" class="form-label">Informações do voo:</label>
+            <input type="text" id="voo" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="hospedagem" class="form-label">Hospedagem:</label>
+            <input type="text" id="hospedagem" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label for="descricao" class="form-label">Descrição/Período:</label>
+            <textarea id="descricao" class="form-control" rows="3" required></textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Salvar Alterações</button>
+        <a href="index.html" class="btn btn-secondary ms-2">Cancelar</a>
+    </form>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+</body>
+</html>

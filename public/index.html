@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Next Trip</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script defer src="app.js"></script>
+</head>
+<body onload="iniciarCards(), iniciarCarrossel()">
+
+    <!--Barra superior-->
+    <header class="bg-light py-2 border-bottom">
+        <div class="container d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <img src="logo.png" alt="Logo" style="width: 120px; height:auto;">
+        <div class="d-flex flex-grow-1">
+        <input type="text" class="form-control me-2" placeholder="Para onde deseja ir?">
+        <button class="btn btn-primary">Buscar</button>
+        </div>
+        <div class="text-primary small"> Canal de Atendimento (31) 3456-7890</div>
+        <button class="btn btn-primary"> Minhas viagens</button>
+    </header>
+    <!--Cabeçalho-->
+    <header>
+        <nav class= "navbar navbar-expand-lg navbar-dark bg-primary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">Next Trip</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav mx-auto flex-wrap">
+                <li class="nav-item"><a class="nav-link" href= "pacotes.html">Pacotes</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "passagens.html">Passagens</a></li>
+                <li class="nav-item"><a class="nav-link" href= "hoteis.html">Hotéis</a></li>
+                <li class="nav-item"><a class="nav-link" href= "promoçoes.html">Promoções</a></li>
+                <li class="nav-item"><a class="nav-link" href= "terrestres.html">Terrestres</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "aereos.html">Aéreos</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "cruzeiro.html">Cruzeiro</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "internacional.html">Internacional</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "praias.html">Praias</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "pacotesprontos.html">Pacotes prontos</a></li>
+                <li class="nav-item"><a class="nav-link"  href= "paratodafamilia.html">Para toda família</a></li>
+            </ul>
+           </div>
+          </div>
+           
+          
+        </nav>
+    </header>
+    <div class="container">
+    <!--Barra de buscas-->
+    <section class="Busca">
+        <h5>Seu próximo destino começa aqui...</h5>
+        <form>
+            <label><input type="radio" name="tipo" checked>Ida e volta</label>
+            <label><input type="radio" name="tipo">Só ida </label>
+            <label><input type="radio" name="tipo">Vários destinos </label>
+            <br>
+            Origem: <input type="text"/>
+            Destino: <input type="text"/>
+            Início: <input type="date"/>
+            Fim: <input type="date"/>
+            N° de viajantes: <input type="number" min="1"/>
+            <button type="submit">Buscar</button>
+        </form>
+    </section>
+
+ 
+<!-- Carrossel -->
+<div class="carrossel-container">
+  <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators"></div>
+    <div class="carousel-inner"></div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+</div>
+
+<!-- Seção de destinos -->
+<section class="container my-5">
+    <div class="d-flex justify-content-between align-items-center mb-3">
+        <h2>Nossos Destinos</h2>
+        <a href="cadastrar.html" class="btn btn-success">Novo destino</a>
+    </div>
+    <div class="row" id="cards-container"></div>
+</section>
+
+<!-- Sobre o desenvolvedor -->
+<section class="bg-light py-5">
+    <div class="container text-center">
+        <h3>Sobre o desenvolvedor</h3>
+        <p>Esse site foi criado por <strong>Sofia Bortolini</strong>, aluna do curso de Desenvolvimento e Interfaces Web</p>
+    </div>
+</section>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>    
+
+</body>
+</html>

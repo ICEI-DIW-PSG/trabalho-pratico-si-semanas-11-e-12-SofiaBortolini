@@ -2,15 +2,24 @@
   "name": "template-diw-20251-semana-11",
   "version": "1.0.0",
   "description": "Back end com JSONServer. Projeto da disciplina de Desenvolvimento de Interfaces Web de vários cursos da PUC Minas",
-  "main": "",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "npx json-server ./db/db.json"
+    "start": "json-server --watch db/db.json --port 3000 --static ./public"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "json-server": "0.17.0"
-  }
+    "json-server": "^0.17.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ICEI-DIW-PSG/trabalho-pratico-si-semanas-11-e-12-SofiaBortolini.git"
+  },
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/ICEI-DIW-PSG/trabalho-pratico-si-semanas-11-e-12-SofiaBortolini/issues"
+  },
+  "homepage": "https://github.com/ICEI-DIW-PSG/trabalho-pratico-si-semanas-11-e-12-SofiaBortolini#readme"
 }

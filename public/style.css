@@ -1,0 +1,263 @@
+*{ margin: 0;
+padding: 0;
+box-sizing: border-box;
+font-family: Arial, Helvetica, sans-serif;
+}
+
+.topo{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6f0ff;
+    padding: 10px 20px;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+.topo img{
+    width: 120px;
+    height: auto;
+}
+.topo input[type="text"] {
+    flex: 1;
+    padding: 8px;
+    border-radius: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    min-width: 150px;
+
+}
+.topo button {
+    padding: 8px 15px;
+    border: none;
+    border-radius: 20px;
+    background-color: #004080;
+    color: white;
+    cursor: pointer;
+}
+.topo button:hover {
+    background-color: #003366;
+}
+.topo .Contato{
+    font-size: 14px;
+    color: #003366;
+    white-space: nowrap;
+    margin-right:10px;
+}
+.topo div{
+    font-size: 14px;
+    color: #003366;
+}
+.caixa-menuprincipal ul{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    background: white;
+    padding: 10px;
+    flex-wrap: wrap;
+    
+}
+.caixa-menuprincipal ul li{
+    margin: 0px 5px;
+}
+.caixa-menuprincipal ul li a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 6px 12px;
+    border-radius: 5px;
+}
+.caixa-menuprincipal ul li a:hover{
+    background: #0066cc;
+}
+.Busca{
+    background: #004080;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    border-radius: 15px;
+    margin: 20px auto;
+    max-width: 1200px;
+    font-weight: 700;
+    font-size: 18px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.Busca h5{
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    color: white;
+}
+.Busca form{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 10px;
+   
+}
+.Busca .campo{
+    display: flex;
+    flex-direction: column;
+    min-width: 150px;
+    flex:1;
+}
+.Busca label{
+    font-weight:bold;
+    font-size: 14px;
+    
+}
+.Busca input,
+.Busca button {
+    padding: 8px;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+}
+.Busca button{
+    background: #003366;
+    color: white;
+
+}
+.Busca button:hover{
+    background: #001f4d;
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+    background: #f2f2f2;
+}
+article{
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    overflow: hidden;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    min-height: 400px;
+    
+}
+article img{
+    width: 100%;
+    height: 120px;
+    object-fit: cover;
+}
+article .titulo{
+    background: #004080;
+    color: white;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    margin: 0;
+}
+article .detalhes{
+    padding: 15px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: #333;
+    text-align: left;
+    flex-grow:1;
+}
+.carrossel-container{
+    width: 100%;
+    margin: 20px auto;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.carousel-inner img {
+    height: 220px !important;
+    object-fit: cover;
+    width: 100%;
+    border-radius: 0;
+}
+.carousel-captions{
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    color: white;
+}
+    .card-img-top{
+        height:120px !important;
+        object-fit: cover;
+         border-radius: 5px 5px 0 0;
+    }
+
+
+/* Resoluções para diversos dispositivos */
+
+@media (max-width: 992px){
+    main {
+        grid-template-columns: repeat (2, 1fr);
+    }
+
+}
+@media (max-width: 600px) {
+    .topo {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    .topo input[type= "text"]{
+      flex: none;
+      width: 100%;
+      margin-right: 0;
+
+    }
+    .topo button,
+    .topo .Contato{
+        width:100%;
+        text-align: center;
+    }
+    .caixa-menuprincipal ul {
+        flex-direction: column;
+        padding: 0;
+    }
+    .caixa-menuprincipal ul li {
+        margin: 5px 0;
+    }
+    main {
+        grid-template-columns: 1fr;
+    }
+    .Busca form{
+        flex-direction: column;
+    }
+    .Busca input,
+    .Busca button{
+        width: 100%;
+    }
+    .card-img-top{
+        height:120px !important;
+        object-fit: cover;
+         border-radius: 5px 5px 0 0;
+    }
+    .card-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    article {
+        min-height: 300px;
+    }
+    article img{
+        max-height: 150px;
+    }
+
+}
+@media (max-width: 768px) {
+    .Busca form {
+        flex-direction: column;;
+    }
+    .Busca input,
+    .Busca button {
+        width: 100%;
+    }
+    .carousel-inner img {
+        height:200px;
+         object-fit: cover;
+         width: 100%;
+         border-radius: 0;
+    }
+}

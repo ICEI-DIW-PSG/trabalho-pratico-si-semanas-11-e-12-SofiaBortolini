@@ -1,18 +1,46 @@
 {
-  "usuarios": [
+  "destinos": [
     {
-      "id": "187cb7e5-e097-4224-8bc7-b610c855e2b1",
-      "login": "admin",
-      "senha": "123",
-      "nome": "Administrador do Sistema",
-      "email": "admin@abc.com"
+      "id": 1,
+      "titulo": "Pacotes para Rio de Janeiro",
+      "imagem": "https://images.unsplash.com/photo-1483729558449-99ef09a8c325?fm=jpg&q=60&w=3000&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cmlvJTIwZGUlMjBqYW5laXJvfGVufDB8fDB8fHww",
+      "local": "Rio de Janeiro, Flamengo",
+      "distancia": "4,55km do centro",
+      "nota": 7,
+      "estrelas": 4,
+      "wifi": true,
+      "voo": "Voo direto SP -> RJ",
+      "hospedagem": "Rio da Lapa",
+      "preco": "R$ 516,00",
+      "descricao": " 13/11/2025 até 16/11/2025<br> Hospedagem com café da manhã incluso"
     },
     {
-      "id": "ec37c83d-4b7f-458d-9e10-3fda7d37cd3e",
-      "login": "user",
-      "senha": "123",
-      "nome": "Usuario Comum",
-      "email": "user@abc.com"
+      "id": 2,
+      "titulo": "Pacotes para Porto Seguro",
+      "imagem": "https://portosegurobahia.com.br/wp-content/uploads/2021/04/porto-seguro-bahia-1500x844-1.jpg",
+      "local": "Porto Seguro, Bahia",
+      "distancia": "3,2km do centro",
+      "nota": 8,
+      "estrelas": 3,
+      "wifi": true,
+      "voo": "Voo direto SP -> BPS",
+      "hospedagem": "Astral Mucugê Pousada",
+      "preco": "R$ 1.137,00",
+      "descricao": "10/12/2025 até 15/12/2025<br> Hospedagem com café da manhã incluso"
+    },
+    {
+      "titulo": "Pacotes para Maceió",
+      "local": "Maceió, Alagoas",
+      "imagem": "https://dicasmaceioemaragogi.com.br/wp-content/uploads/sites/17/2021/07/maceio-cidade-brasil.jpg",
+      "preco": 1548,
+      "distancia": "2,8km do centro",
+      "nota": 9,
+      "estrelas": 4,
+      "wifi": true,
+      "voo": "Voo direto SP -> MCZ",
+      "hospedagem": "Reymar Express",
+      "descricao": "29/03/2026 até 03/04/2026<br> Hospedagem com café da manhã incluso",
+      "id": 3
     }
   ]
 }
